@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         incrementButton = (Button) this.findViewById(R.id.incrementButton);
         countView = (TextView) this.findViewById(R.id.currentCount);
         counter = new Counter();
-        countView.setText(countView.getText() + String.valueOf(00));
+
     }
 
     public void incrementCount(View view){
