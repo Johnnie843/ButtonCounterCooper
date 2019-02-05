@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    #Button Container for activity_main
+    <dimen name="buttonContainerHeight">101dp</dimen>
+    <dimen name="buttonContainerWidth">267dp</dimen>
+    <dimen name="buttonContainerMargin">8dp</dimen>
+    <dimen name="buttonWeight">1</dimen>
+
+    #Count Container for activity_main
+    <dimen name="countContainerHeight">206dp</dimen>
+    <dimen name="countContainerWidth">304dp</dimen>
+    <dimen name="countContainerMargin">8dp</dimen>
+    <dimen name="countContainerTopPadding">50dp</dimen>
+
+    #Count TextView's
+    <dimen name="currentCountTextFontSize">30sp</dimen>
+    <dimen name="currentCountNumberSize">72sp</dimen>
+    <dimen name="currentCountTopPadding">10dp</dimen>
+
+</resources>

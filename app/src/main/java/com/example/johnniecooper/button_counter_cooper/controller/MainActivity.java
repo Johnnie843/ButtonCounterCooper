@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     public void resetCount(View view){
 
         counter.resetCount();
-
         countView.setText(counter.countToString());
 
     }

@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context=".controller.MainActivity">
 
 
     <LinearLayout
-        android:layout_width="267dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="@dimen/buttonContainerWidth"
+        android:layout_height="@dimen/buttonContainerHeight"
+        android:layout_marginStart="@dimen/buttonContainerMargin"
+        android:layout_marginTop="@dimen/buttonContainerMargin"
+        android:layout_marginEnd="@dimen/buttonContainerMargin"
+        android:layout_marginBottom="@dimen/buttonContainerMargin"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +29,7 @@
                 android:id="@+id/incrementButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="@dimen/buttonWeight"
                 android:text="@string/increment"
                 android:onClick="incrementCount"/>
 
@@ -38,7 +37,7 @@
                 android:id="@+id/deincrementButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="@dimen/buttonWeight"
                 android:text="@string/decrement"
                 android:onClick="deincrementCount"/>/>
         </LinearLayout>
@@ -52,7 +51,7 @@
                 android:id="@+id/resetButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="@dimen/buttonWeight"
                 android:text="@string/reset"
                 android:onClick="resetCount"/>/>
         </LinearLayout>
@@ -60,13 +59,13 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="304dp"
-        android:layout_height="206dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="@dimen/countContainerWidth"
+        android:layout_height="@dimen/countContainerHeight"
+        android:layout_marginStart="@dimen/countContainerMargin"
+        android:layout_marginTop="@dimen/countContainerMargin"
+        android:layout_marginEnd="@dimen/countContainerMargin"
         android:orientation="vertical"
-        android:paddingTop="50dp"
+        android:paddingTop="@dimen/countContainerTopPadding"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -77,17 +76,17 @@
             android:layout_height="wrap_content"
             android:text="@string/currentCount"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="@dimen/currentCountTextFontSize" />
 
         <TextView
             android:id="@+id/currentCount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
+            android:paddingTop="@dimen/currentCountTopPadding"
             android:text="@string/initCounter"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="72sp"
+            android:textSize="@dimen/currentCountNumberSize"
             android:textStyle="bold" />
 
     </LinearLayout>
